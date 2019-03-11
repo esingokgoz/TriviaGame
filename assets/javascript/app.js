@@ -38,9 +38,9 @@ $(document).ready(function(){
     ]
     var multpchoice = ["A", "B", "C", "D"]
     var audio = new Audio('../sound/clock-ticking.mp3');
-    // var audioElement = document.createElement("audio");
-    //    audioElement.setAttribute("src", "../sound/clock-ticking.mp3");
-    //    audioElement.play();
+    var audioElement = document.createElement("audio");
+       audioElement.setAttribute("src", "../sound/clock-ticking.mp3");
+       audioElement.play();
 
     //messages to display for user
     var userMessages = {
