@@ -1,0 +1,8 @@
+body {
+    background-image: url("../images/flags_bg.jpg");
+}
+
+h1 {
+    text-align: center !important;
+    color: #33788e;
+}
