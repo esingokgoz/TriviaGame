@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    //hide the chart when the document is loaded
-    $("finalChart").hide();
 
     //correct/wrong answer counters
     var correctAnswers = 0;
@@ -34,13 +32,35 @@ $(document).ready(function(){
             question: "What is the capital of Germany?",
             answerOptions: ["Hamburg", "Munich", "Frankfurt", "Berlin"],
             answerKey: 3
-        }
+        }, //Q4
+        {
+            question: "What is the capital of India?",
+            answerOptions: ["Mumbai", "New Delphi", "Ahmedabad", "Agra"],
+            answerKey: 1
+        }, //Q5
+        {
+            question: "What is the capital of Italy?",
+            answerOptions: ["Florance", "Venice", "Milan", "Rome"],
+            answerKey: 3
+        }, //Q6
+        {
+            question: "What is the capital of Australia?",
+            answerOptions: ["Melbourne", "Sydney", "Canberra", "Brisbane"],
+            answerKey: 2
+        }, //Q7
+        {
+            question: "What is the capital of Pakistan?",
+            answerOptions: ["Islamabad", "Karachi", "Lahore", "Rawalpindi"],
+            answerKey: 0
+        }, //Q8
+        {
+            question: "What is the capital of China?",
+            answerOptions: ["Shanghai", "Beijing", "Hong Kong", "Shenzhen"],
+            answerKey: 1
+        }, 
     ]
     var multpchoice = ["A", "B", "C", "D"]
-    var audio = new Audio('../sound/clock-ticking.mp3');
-    var audioElement = document.createElement("audio");
-       audioElement.setAttribute("src", "../sound/clock-ticking.mp3");
-       audioElement.play();
+    var audio = new Audio('assets/sound/clock-ticking.mp3');
 
     //messages to display for user
     var userMessages = {
@@ -137,7 +157,7 @@ $(document).ready(function(){
         //display the answer options
         for (var i = 0; i < 4; i++) {
             var choices = $("<div>");
-            choices.text(multpchoice[i] + ") " + question[currentQuestion].answerOptions[i]);
+            choices.html("<strong>" + multpchoice[i] + ")</strong> " + question[currentQuestion].answerOptions[i]);
             choices.attr({ "data-index": i });
             choices.addClass("thisChoice");
             $(".answerList").append(choices);
@@ -174,7 +194,7 @@ $(document).ready(function(){
     }
 
     //start button 
-    $(".btn").on("click", function () {
+    $("#startButton").on("click", function () {
         $(this).hide();
         start();
     });
@@ -183,4 +203,5 @@ $(document).ready(function(){
         $(this).hide();
         start();
     });
+
 });
