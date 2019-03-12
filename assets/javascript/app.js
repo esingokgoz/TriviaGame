@@ -191,10 +191,12 @@ $(document).ready(function(){
         $("#startAgainButton").addClass("reset");
         $("#startAgainButton").show();
         $("#startAgainButton").text("Start Over?");
+
+
     }
 
     //start button 
-    $("#startButton").on("click", function () {
+    $(".btn").on("click", function () {
         $(this).hide();
         start();
     });
