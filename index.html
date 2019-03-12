@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Trivia Game Title Row 1 -->
+        <div class="row bg-light">
+            <div class="col-md-12 d-flex justify-content-center">
+                <h1>Trivia Game</h1>
+            </div>
+        </div>
+        <br><br><br>
+
+        <!-- Instruction Row 2 -->
+        <div class="row bg-light">
+            <div class="col-md-12 d-flex justify-content-center">
+                <p>Answer each question to test your knowledge!</p>
+            </div>
+            <br><br>
+        </div>
+
+        <!-- Start Button Row 3 -->
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center bg-light">
+                <button type="button" class="btn btn-primary">START</button>
+            </div>
+        </div>
+
+        <!-- Timer Row 3 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="timer"></div>
+            </div>
+        </div>
+
+        <!-- Question Row 4 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="currentQuestion"></div>
+            </div>
+        </div>
+        
+        <!-- Question Row 5 -->
+        <div class="row ">
+            <div class="col-md-12 bg-light text-center">
+                <div class="question"></div>
+            </div>
+        </div>
+
+        <!-- Multiple choice options Row 5 -->
+        <div class="row ">
+            <div class="col-md-12 bg-light text-center">
+                <div class="answerList"></div>
+            </div>
+        </div>
+
+        <!-- Right/Wrong/Time's up messages Row 5 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                    <div id="messages"></div>
+            </div>
+        </div>
+
+        <!-- Scoreboard correct answers Row 5 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="correctAnswers"></div>
+            </div>
+        </div>
+
+        <!-- Scoreboard wrong answers Row 5 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="wrongAnswers"></div>
+            </div>
+        </div>
+
+        <!-- Scoreboard not answered answers Row 5 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="notAnswered"></div>
+            </div>
+        </div>
+
+        <!-- Start again button Row 5 -->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div button id="startAgainButton">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Answer Page-->
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="message"> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 bg-light text-center">
+                <div id="correctedAnswer"> </div>
+            </div>
+        </div>
+
+
+
+        <!-- End-->
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
