@@ -92,12 +92,13 @@ $(document).ready(function(){
         $("#timer").html("<h3>Time left: " + sec + "</h3>");
         answered = true;
         time = setInterval(timerCountDown, 1000);
-        audio.play();
+        
     }
 
     //Timer Count Down
     function timerCountDown(){
         sec--;
+        audio.play();
         $("#timer").html("<h3>Time left: " + sec + "</h3>");
         
         //if time is less than 1, clear the time, set answered to false and then call the answer page
@@ -112,6 +113,7 @@ $(document).ready(function(){
         $("#currentQuestion").empty();
         $(".thisChoice").empty();
         $(".question").empty();
+        audio.pause();
 
         var rightAnswerText = question[currentQuestion].answerOptions[question[currentQuestion].answerKey];
         var rightAnswerIndex = question[currentQuestion].answerKey;
@@ -170,6 +172,7 @@ $(document).ready(function(){
             userAnswer = $(this).data("index");
             clearInterval(time);
             answerPage();
+            
         });
     }
     //after game ends, show the scoreboard
