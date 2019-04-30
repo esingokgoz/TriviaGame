@@ -17,8 +17,10 @@ Choose the correct answer for each question before the 10 second timer runs out.
 - If you select the correct option, your correct answer score goes up.
 
 ##### Start Page
+- Click Start to start the quiz
 <img width="1158"  src="https://github.com/esingokgoz/TriviaGame/blob/master/assets/images/startpage.png">
 
 
 ##### Question Page
+- Choose the correct answer in 10 seconds
 <img width="1158"  src="https://github.com/esingokgoz/TriviaGame/blob/master/assets/images/questions.png">
