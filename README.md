@@ -21,3 +21,4 @@ Choose the correct answer for each question before the 10 second timer runs out.
 
 
 ##### Question Page
+<img width="1158"  src="https://github.com/esingokgoz/TriviaGame/blob/master/assets/images/questionpage.png">
